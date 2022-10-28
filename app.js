@@ -9,10 +9,10 @@ app.use(express.json());
 app.use(cors());
 
 //routes
-const jobRoute = require('../routes/job.route')
-  const candidateRoute = require('../routes/candidate.route')
- const hirringManagerRoute = require('../routes/manager.route')
- const userRoute  = require('../routes/user.route')
+const jobRoute = require('./routes/job.route')
+  const candidateRoute = require('./routes/candidate.route')
+ const hirringManagerRoute = require('./routes/manager.route')
+ const userRoute  = require('./routes/user.route')
 
 app.get("/", (req, res) => {
   res.send("Route is working! YaY!");
