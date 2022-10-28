@@ -11,10 +11,7 @@ const {
 
  exports.getJob = async (req, res, next) => {
    try {
-    // const products = await (Product.where("name").equals(/\w/).where('quantity').gt('100')
-    // .limit(2).sort({quantity:-1}))
-
-     let filters = { ...req.query };
+    let filters = { ...req.query };
 
   //  sort, page, limit =>exclude
     const excludeFields = ["sort", "page", "limit"];
